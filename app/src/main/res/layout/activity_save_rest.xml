@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activitys.SaveRestActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:textStyle="bold"
+        android:background="@color/red1"
+        android:textSize="@dimen/_20sdp"
+        android:text="سامانه درخواست مرخصی"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:padding="@dimen/_17sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/_8sdp"
+            android:padding="@dimen/_12sdp"
+            android:text="انتخاب روز مرخصی"
+            android:textColor="@color/red1"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <EditText
+            android:id="@+id/ed_description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background3"
+            android:gravity="right"
+            android:hint="توضیحات خود را در اینه قسمت وارد کنید"
+            android:maxLength="450"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:textColor="@color/red1"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/id_date"
+            android:padding="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_rest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:background="@drawable/background2"
+            android:text="ثبت مرخصی"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:background="@drawable/background4"
+            android:text="بازگشت"
+            android:textColor="@color/red2"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/prd_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        android:background="@drawable/background3"/>
+
+</RelativeLayout>

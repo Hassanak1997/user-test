@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    tools:context=".activitys.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:textStyle="bold"
+        android:background="@color/red1"
+        android:textSize="@dimen/_20sdp"
+        android:text="سامانه درخواست مرخصی"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ورود کاربر"
+            android:textSize="@dimen/_20sdp"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/background3"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:textSize="@dimen/_10sdp"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:hint="نام کاربری"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/background3"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:hint="رمز عبور"
+            android:maxLines="1"
+            android:textSize="@dimen/_10sdp"
+            android:maxLength="20"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_enter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/background"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:text="ورود"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+
+        <TextView
+            android:id="@+id/txt_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اگر اکانتی ندارید ثبت نام کنید"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/red2"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/prd_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        android:background="@drawable/background3"/>
+
+</RelativeLayout>
